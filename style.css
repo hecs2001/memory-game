@@ -1,0 +1,51 @@
+* {
+    font-family: 'Press Start 2P';
+    background-color: #181818;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    justify-content: center;
+}
+
+.item-title {
+    font-size: 2rem;
+    margin: 50px;
+}
+
+.item-button {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+@media screen and (max-width: 1000px) {
+    .item-title {
+        font-size: 1.4rem;
+    }
+    .item-button {
+        height: 200px;
+        width: 200px;
+    }
+}
