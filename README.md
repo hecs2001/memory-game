@@ -13,7 +13,7 @@ To see how long you can correctly repeat the sequences before making a mistake. 
 ## How this Game benefit to the user?
 * **Improves Memory**: Helps train your short-term memory and recall skills.
 * **Enhances Concentration**: Requires focus and attention to remember the sequences.
-* ****Provides Entertainment**: A fun and challenging way to pass the time.
+* **Provides Entertainment**: A fun and challenging way to pass the time.
 
 # About Project
 Based on Simon Game Challenge by Angela Yu on [Web Development Bootcamp](https://www.udemy.com/share/101qYw3@xZmm1oTEXpAMFymJVE0GcMyDyAIDqvGj6W-mWVmdNGHE5bHVFey-WCNABuzfpFcBhA==/).

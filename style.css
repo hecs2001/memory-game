@@ -40,6 +40,11 @@
     background-color: blue;
 }
 
+.button-pressed {
+    box-shadow: 0 0 20px white;
+    border: 5px solid gray;
+}
+
 @media screen and (max-width: 1000px) {
     .item-title {
         font-size: 1.4rem;
