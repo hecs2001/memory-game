@@ -1,8 +1,11 @@
 * {
     font-family: 'Press Start 2P';
-    background-color: #181818;
     color: white;
     text-align: center;
+}
+
+body {
+    background-color: #181818;
 }
 
 .container {
@@ -43,6 +46,10 @@
 .button-pressed {
     box-shadow: 0 0 20px white;
     border: 5px solid gray;
+}
+
+.game-over {
+    background-color: #8b0000;
 }
 
 @media screen and (max-width: 1000px) {
