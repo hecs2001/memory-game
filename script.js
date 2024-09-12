@@ -4,6 +4,10 @@ var inputPattern = [];
 var gameStarted = false;
 var gameLevel = 0;
 
+if(!localStorage.getItem('highest')) {
+    localStorage.setItem('highest', 0);
+}
+
 function resetGame() {
     gamePattern = [];
     inputPattern = [];
@@ -17,7 +21,7 @@ function nextSequence() {
 
     inputPattern = [];
     gameLevel++;
-    $(".item-title").text("Level "+gameLevel);
+    $(".item-heading").text("Level "+gameLevel);
 
     playSound(chosenColor);
     $("#"+chosenColor).fadeIn(150).fadeOut(150).fadeIn(150);
@@ -27,18 +31,22 @@ function checkSequence(sequence, color) {
     if(gameStarted) {
         if(inputPattern[sequence] == gamePattern[sequence]) {
             if(inputPattern.length === gamePattern.length) {
-                $(".item-title").text("Level "+gameLevel+" Completed");
+                $(".item-heading").text("Level "+gameLevel+" Completed");
                 setTimeout(function(){
                     nextSequence();
                 }, 1000);
             }
         } else {
-            $(".item-title").text("Game Over");
+            $(".item-heading").text("Game Over");
             $("body").addClass("game-over");
             gameStarted = false;
+            if((gameLevel-1) > localStorage.getItem('highest')) {
+                localStorage.setItem('highest', (gameLevel-1));
+                $(".item-subheading").text("Highest Level: " + localStorage.getItem('highest'));
+            }
             setTimeout(function() {
                 $("body").removeClass("game-over");
-                $(".item-title").text("Press 'space' to Restart");
+                $(".item-heading").text("Press 'space' to Restart");
             }, 500);
             return "wrong";
         }
@@ -59,6 +67,7 @@ function animateClicked(color) {
 }
 
 $(document).ready(function() {
+    $(".item-subheading").text("Highest Level: " + localStorage.getItem('highest'));
     $(".item-button").click(function() {
         let inputColor = $(this).attr("id");
         inputPattern.push(inputColor);
