@@ -13,3 +13,11 @@ To see how long you can correctly repeat the sequences before making a mistake. 
 3. On each level, a single button will flash to your screen.
 4. Recall the button that was flashed to your screen starting from the first level up to the latest.
 5. The game ends if you made a mistake.
+
+## Project Preview
+### Snapshot 1: Main Screen of the Game
+![Start Screen](https://github.com/user-attachments/assets/9481d76a-a22c-487a-bc40-be76ccacb201)
+### Snapshot 2: Running Game Preview
+![Example of Game](https://github.com/user-attachments/assets/8d8b9883-e9b6-41b1-9fb0-cae6a50bde72)
+### Snapshot 3: Game Over Preview
+![End Game](https://github.com/user-attachments/assets/0b154eb8-b9e1-4836-8a45-9b1732321ead)
